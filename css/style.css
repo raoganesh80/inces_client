@@ -759,6 +759,100 @@ section {
   margin-bottom: 0;
   text-align: left;
 }
+
+
+/*--------------------------------------------------------------
+# OurServices
+--------------------------------------------------------------*/
+.OurServices {
+  background: #0491E4;
+  padding-bottom: 80px;
+}
+
+.OurServices #program-lists {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.OurServices #program-lists li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.OurServices #program-lists li:hover, .OurServices #program-lists li.active {
+  color: #0f628c;
+  background: white;
+}
+
+.OurServices .section-title h2, .OurServices .section-title p {
+  color: #fff;
+}
+
+.OurServices .section-title h2::after {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.OurServices .icon-box {
+  padding: 20px 20px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.OurServices .icon-box:hover {
+  transform: scale(1.02);
+}
+
+.OurServices .icon {
+  margin-bottom: 15px;
+}
+
+.OurServices .icon i {
+  font-size: 32px;
+  line-height: 1;
+  color: #2d405f;
+  background: #eff2f8;
+  padding: 20px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.OurServices .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.OurServices .title a {
+  color: #2d405f;
+  transition: 0.3s;
+}
+
+.OurServices .title a:hover {
+  color: #4e6fa4;
+}
+
+.OurServices .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
 /*--------------------------------------------------------------
 # contant
 --------------------------------------------------------------*/
