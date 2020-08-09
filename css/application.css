@@ -1,0 +1,20 @@
+.application {
+    width: 100%;
+    background-color: #fff;
+}
+
+.application h2 {
+    text-align: center;
+    color: #0297e0;
+}
+
+.application .card {
+    background: #0060AE;
+    padding: 10px;
+}
+
+.application .card .contain p{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 400px;
+  margin-left: 240px;
 }
 
 .nav-menu > ul {
@@ -420,11 +420,10 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 96vh;
+  height: 108vh;
   background: white;
   border-bottom: 2px solid white;
   text-align: center;
-  margin-bottom: -70px;
 }
 
 @media (max-width: 992px) {
@@ -451,7 +450,7 @@ section {
 }
 
 .section-bg {
-  background-color: #012D66;
+  background-color: #0491E4;
 }
 
 .section-title {
@@ -865,6 +864,22 @@ section {
   color: white;
 }
 
+.contant .about-img img{
+  width: 315px;
+  height: auto; 
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.8);
+}
+.contant .footer a{
+  background: #012E65;
+  color: white;
+  padding: 10px;
+  border: 1px solid #012E65;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: 4px 4px 12px 2px rgba(1, 46, 101, 0.8);
+  cursor: pointer;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1117,7 +1132,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: black;
+  color: #fff;
 }
 
 .team .title h2::after {
@@ -1136,6 +1151,8 @@ section {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  border: 1px solid #fff;
+
 }
 
 .team .member .member-info {
@@ -1385,7 +1402,6 @@ section {
 
 .contact .contact-title {
   text-align: center;
-  background-color: #012d66;
   padding: 30px;
 }
 
@@ -1398,7 +1414,6 @@ section {
 .contact #program-lists {
   list-style: none;
   text-align: center;
-  margin-top: 30px;
   border-radius: 10px;
 }
 
@@ -1410,14 +1425,14 @@ section {
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
-  color: #012d66;
+  color: #fff;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
 }
 
 .contact #program-lists li:hover{
-  color: white;
-  background: #012d66;
+  color: #009be2;
+  background: #fff;
 }
 
 .contact .contact-title h4{
@@ -1437,7 +1452,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #3b4ef8;
+  color: #009be2;
   padding: 8px;
 }
 
@@ -1526,8 +1541,8 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #012d66;
-  border: 1px solid #012d66;
+  background: #009be2;
+  border: 1px solid #009be2;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
@@ -1536,8 +1551,8 @@ section {
 
 .contact .php-email-form button[type="submit"]:hover {
   background: white;
-  color: #0f628c;
-  border: 1px solid #0f628c;
+  color: #009be2;
+  border: 1px solid #009be2;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1602,7 +1617,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: black;
+  color: #009be2;
 }
 
 .portfolio .title h2::after {
@@ -1639,7 +1654,7 @@ section {
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #012d66;
+  background: #0491E4;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1651,7 +1666,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border: 2px solid #012d66;
+  border: 2px solid #009be2;
   cursor: pointer;
 }
 
@@ -1737,13 +1752,13 @@ section {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #0e3d77;
+  background: #008BCC;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #012d66;
+  background: rgb(2, 106, 155);
 }
 
 #footer .footer-top img{
@@ -1880,7 +1895,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #e7eafe;
-  color: #012d66;
+  color: #009be2;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1892,7 +1907,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #012d66;
+  background: #009be2;
   color: #fff;
   text-decoration: none;
 }

@@ -1,0 +1,21 @@
+.settingbenchmarks .section-title h2{
+    color: #009be2;
+}
+.settingbenchmarks .card{
+    background: #fff;
+    padding: 22px;
+    border-radius: 81px;
+    border: 1px solid #fff;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.settingbenchmarks .card:hover{
+    border: 1px solid #fff;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.9);
+}
+
+.settingbenchmarks .card p{ 
+    font-size: 15px;
+    color: black;
+    font-weight: 800;
+}
