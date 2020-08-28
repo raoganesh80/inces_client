@@ -23,6 +23,65 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/application.css" rel="stylesheet">
   <link href="css/settingbenchmarks.css" rel="stylesheet">
+  <style>
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 440px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #fff;
+    }
+
+    .flip-card-front h1 {
+      background-color: #fff;
+      color: #009be2;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .flip-card-front p {
+      padding: 15px;
+      text-align: justify;
+    }
+
+    .flip-card-back {
+      background-color: #009be2;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-back p {
+      font-size: 25px;
+      padding: 15px;
+      margin-top: 90px;
+    }
+  </style>
 </head>
 
 <body>
@@ -52,17 +111,15 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xl-12">
+            <div class="col-xl-12" style="margin-left: 7rem;">
               <nav class="nav-menu">
                 <ul>
                   <li></li>
-                  <li><a href="index.html">Home</a></li>
                   <li><a href="about-us.html">About Us</a></li>
-                  <li><a href="#products">Product</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-                  <li><a href="#">Career</a></li>
+                  <li><a href="">Product Lineup</a></li>
+                  <!-- <li><a href="#products">Product</a></li> -->
                   <li><a href="#">Quality Assurance</a></li>
+                  <li><a href="">Dealers & Franchisee</a></li>
                 </ul>
               </nav>
             </div>
@@ -131,41 +188,52 @@
         </div>
         <div class="row">
           <div class="col-md-4 col-lg-4 col-xl-4 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="img/about/OurVision.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h3>Our Vision</h3>
-                <p>To be the leading consulting company in India, focused on providing effective and sustainable
-                  solutions to add tangible value for all stakeholders.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xl-4 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="img/about/OurMission2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h3>Our Mission</h3>
-                <p>To ensure that we provide personalized, executable and sustainable recommenda-<br>-tions with the
-                  right resources to maximize our clients' business potential.
-                </p>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/about/image_1561121995.svg" alt="Avatar">
+                  <h1>Our Vision</h1>
+                  <p>To be the Leading Pipe Manufacturing Company in India, providing High Valued products and Quality
+                    services to everyone.
+                  </p>
+                </div>
+                <div class="flip-card-back">
+                  <p>To be the Leading Pipe Manufacturing Company in India, providing High Valued products and Quality
+                    services to everyone.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 col-lg-4 col-xl-4 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="img/about/OurValues2.jpg" class="img-fluid" alt="">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/about/image_1561122006.svg" alt="Avatar">
+                  <h1>Our Mission</h1>
+                  <p>We strive to offer our customers the lowest possible prices and the utmost convenience while using the Business to inspire and implement solutions.
+                  </p>
+                </div>
+                <div class="flip-card-back">
+                  <p>We strive to offer our customers the lowest possible prices and the utmost convenience while using the Business to inspire and implement solutions.
+                  </p>
+                </div>
               </div>
-              <div class="member-info">
-                <h3>Our Values</h3>
-                <p>Commitment, Excellence, People focused, Always learning, Team spirit and Respect are the values that
-                  defines who we are and the pillars which we believe in.
-                </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xl-4 d-flex align-items-stretch">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/about/image_1561122016.svg" alt="Avatar">
+                  <h1>Our Values</h1>
+                  <p>Quality Assurance, Commitment, Growing Mentality & Customer Satisfaction are our Core values that drives us towards achieving Excellence.
+                  </p>
+                </div>
+                <div class="flip-card-back">
+                  <p>Quality Assurance, Commitment, Growing Mentality & Customer Satisfaction are our Core values that drives us towards achieving Excellence.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -179,27 +247,30 @@
     <section class="application">
       <div class="container">
         <div class="section-title">
-          <h2>Applications</h2>
+          <h2>Product Category</h2>
         </div>
         <div class="row">
           <div class="col-xl-4">
             <div class="card">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="img">
-                    <img src="https://www.astralpipes.com/assets/images/anim-icon1.gif" alt="loading">
+              <a href="products/category1.html">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="img">
+                      <img src="https://www.astralpipes.com/assets/images/anim-icon1.gif" alt="loading">
+                    </div>
+                  </div>
+                  <div class="col-xl-7">
+                    <div class="contain">
+                      <p>PLUMBING PIPES</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-xl-7">
-                  <div class="contain">
-                    <p>Plumbing</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
           <div class="col-xl-4">
             <div class="card" style="background: #053987">
+              <a href="products/category2.html">
               <div class="row">
                 <div class="col-xl-5">
                   <div class="img">
@@ -208,76 +279,29 @@
                 </div>
                 <div class="col-xl-7">
                   <div class="contain">
-                    <p>Sewerage & Drainage</p>
+                    <p>AGRICULTURAL PIPES</p>
                   </div>
                 </div>
               </div>
+              </a>
             </div>
           </div>
           <div class="col-xl-4">
             <div class="card" style="background: #0096FF">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="img">
-                    <img src="https://www.astralpipes.com/assets/images/anim-icon3.gif">
+              <a href="products/category3.html">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="img">
+                      <img src="https://www.astralpipes.com/assets/images/anim-icon3.gif">
+                    </div>
+                  </div>
+                  <div class="col-xl-7">
+                    <div class="contain">
+                      <p>SEWAGE & DRAINAGE</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-xl-7">
-                  <div class="contain">
-                    <p>Agricultural</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-xl-4">
-            <div class="card" style="background-color: #0096ff;">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="img">
-                    <img src="https://www.astralpipes.com/assets/images/anim-icon9.gif">
-                  </div>
-                </div>
-                <div class="col-xl-7">
-                  <div class="contain">
-                    <p>Infrastructure</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4">
-            <div class="card" style="background: #0046ae">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="img">
-                    <img src="https://www.astralpipes.com/assets/images/anim-icon2.gif">
-                  </div>
-                </div>
-                <div class="col-xl-7">
-                  <div class="contain">
-                    <p>Industrial</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4">
-            <div class="card" style="background: #0052cc">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="img">
-                    <img src="https://www.astralpipes.com/assets/images/anim-icon7.gif">
-                  </div>
-                </div>
-                <div class="col-xl-7">
-                  <div class="contain">
-                    <p>Insulation</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -494,7 +518,7 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-     <!-- ======= Team Section ======= -->
+    <!-- ======= Team Section ======= -->
     <section id="team" class="team" style="background-image: url('img/wave/wave2.svg'); background-size: cover;">
       <div class="container">
         <div class="title">
